@@ -33,7 +33,7 @@ let newArray3 = arrayStrings.filter((color) => {
 //Ejercicio 2
 //3 maximos intentos
 
-/*const pinSecreto = '1234';
+const pinSecreto = '1234';
 let pin = prompt('Introduce el pin:');
 let intentos = 0;
 
@@ -62,11 +62,11 @@ while(pin2 !== 'salir'){
         console.log('Eso estaba mal, intenta de nuevo');
         pin2 = prompt(`Para salir, escribe la palabra 'salir'.`);
     }
-}*/
+}
 
 //Ejercicio 3
 //checar si un string es un palindromo con for
-/*const checarPalindromo = (string) => {
+const checarPalindromo = (string) => {
     let stringSinEspacio = string.split(' ').join('');
     let largo = stringSinEspacio.length;
     for (let i=0; i < largo/2; i++) {
@@ -80,10 +80,10 @@ while(pin2 !== 'salir'){
 const string = prompt('Escriba una palabra:');
 const resultado = checarPalindromo(string);
 
-console.log(resultado);*/
+console.log(resultado);
 
 //checar si un string es un palíndromo con Built in Function reverse()
-/*const checarPalindromo2 = (string2) => {
+const checarPalindromo2 = (string2) => {
     const stringSinEspacio2 = string2.split(' ').join('');
     const stringReverse = stringSinEspacio2.split('').reverse().join('');
     if(stringSinEspacio2.toLowerCase() === stringReverse.toLowerCase()){
@@ -94,14 +94,13 @@ console.log(resultado);*/
 const string2 = prompt('Escriba una palabra:');
 const resultado2 = checarPalindromo2(string2);
 
-console.log(resultado2);*/
+console.log(resultado2);
 
 //Mismo ejercicio con array de Strings
 const esPalindromoArray = (array) => {
     const arraySinEspacio = array.map(element => element.split(' ').join('').toLowerCase());
     const arrayReverse = arraySinEspacio.map(element =>  element.split('').reverse().join('').toLowerCase());
-    //const arraySinEspacioMin = arraySinEspacio.toLowerCase();
-    //const arrayReverseMin = arrayReverse.toLowerCase();
+
     
     return arraySinEspacio.map((string, index) => {
         return {
