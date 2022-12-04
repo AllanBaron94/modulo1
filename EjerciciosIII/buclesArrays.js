@@ -98,8 +98,8 @@ console.log(resultado2);*/
 
 //Mismo ejercicio con array de Strings
 const esPalindromoArray = (array) => {
-    const arraySinEspacio = array.map(element => element.split(' ').join(''));
-    const arrayReverse = arraySinEspacio.map(element =>  element.split('').reverse().join(''));
+    const arraySinEspacio = array.map(element => element.split(' ').join('').toLowerCase());
+    const arrayReverse = arraySinEspacio.map(element =>  element.split('').reverse().join('').toLowerCase());
     //const arraySinEspacioMin = arraySinEspacio.toLowerCase();
     //const arrayReverseMin = arrayReverse.toLowerCase();
     
