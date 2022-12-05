@@ -8,6 +8,7 @@
     <title>Controlador de gastos</title>
 </head>
 <body>
+    <center>
     <header>
         <h1>Controlador de gastos</h1>
     </header>
@@ -16,6 +17,16 @@
         <input type="button" onclick="editarGasto()" value="Editar Gasto">
         <input type="button" onclick="eliminarGasto()" value="Eliminar Gasto">
     </nav>
-    <p id="ListadeGastos"></p>
+    <div>
+        <h2>Lista de Gastos:</h2>
+        <h3><p id="ListadeGastos"></p></h3>
+    </div>
+    <div>
+        <input type="button" onclick="sumarGastos()" value="Mostrar Total">
+    </div>
+    <div>
+        <h2><p id="sumaGastos"></p></h2>
+    </div>
+    </center>
 </body>
 </html>
