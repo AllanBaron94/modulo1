@@ -1,4 +1,4 @@
-let gastos = [];
+const gastos = [];
 let idExiste = '';
 let cantidadEsNumero = '';
 
@@ -14,7 +14,7 @@ const listarGastos = () => {
 }
 
 const buscarValor = (valor) => {
-    let check = [];
+    const check = [];
     gastos.forEach( element => {
         if(element.id.split(' ').join('').toLowerCase() === valor.split(' ').join('').toLowerCase()) {
             check.push(1);
